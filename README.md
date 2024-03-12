@@ -79,6 +79,11 @@ A 220 ohm resistor is connected to IR Receiver to prevent short circuit.
 ### Circuit Diagram
 <img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/57f1201d-5813-4fc6-982b-8e0b3c3ed1cf" width="500" />
 
+## Demo
+### Firebase Demo
+<img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/fcd38460-328c-4990-a5cb-47cb36289af2" width="500" />
+
+
 ## Code
 #### In this piece of code, you need to amend the codes that are commented with //.
 ```
