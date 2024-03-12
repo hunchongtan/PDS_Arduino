@@ -33,6 +33,14 @@ In simple terms, a SwitchBot can turn almost any regular switch or button into a
 I stay in my university hostel and the light switch is a distance away from the bed. I always face the issue of needing to get out of bed, walk over to the light switch and switch off the lights physically. It was then I found out about the SwitchBot. The SwitchBot is a must-get for any lazy or “efficient” person like me! However, the $40 SwitchBot price tag had me scrolling past right quickly. But then, a spark of inspiration hit. Why spend the big bucks when I could unleash my inner inventor? Here's the thing: with some Arduino know-how, I can build my own smart switch, customise it exactly how I want, and all for a fraction of the cost. Suddenly, my university Acai Bowl budget started looking a little brighter.  Plus, the challenge of building something myself? Way more exciting than hitting "add to cart."
 
 ## Basic Set-Up
+### Essential Libraries
+Download the following libraries:
+- Arduino
+- WiFi
+- FirebaseESP32
+- IRremote
+- ESP32Servo (Normal Servo library does not work as well)
+
 ### IR Receiver Set-Up
 Before typing-out the necessary code, you have to set up a basic circuit for the IR receiver as such: ( <a href="https://www.circuitbasics.com/arduino-ir-remote-receiver-tutorial/">Reference Link </a> )
 
