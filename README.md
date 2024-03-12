@@ -72,9 +72,12 @@ In my case, my plus Button code is 0xA3C8EDDB and minus Button code is 0xF076C13
 ### Connection Schematic Diagram
 Note: Due to limations on TinkerCAD, diagram shows an Arduino UNO instead. Just take note of the pinwiring.
 <br />
-<img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/57f1201d-5813-4fc6-982b-8e0b3c3ed1cf" width="500" />
+<img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/c6f1fb3d-3293-480c-bbe4-15c202c769f5" width="500" />
 <br />
 A 220 ohm resistor is connected to IR Receiver to prevent short circuit.
+<br />
+### Circuit Diagram
+<img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/57f1201d-5813-4fc6-982b-8e0b3c3ed1cf" width="500" />
 
 ## Code
 #### In this piece of code, you need to amend the codes that are commented with //.
