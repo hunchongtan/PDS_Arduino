@@ -46,7 +46,7 @@ Download the following libraries:
 - ESP32Servo (Normal Servo library does not work as well)
 
 ### IR Receiver Set-Up
-Before typing-out the necessary code, you have to set up a basic circuit for the IR receiver as such: ( <a href="https://www.circuitbasics.com/arduino-ir-remote-receiver-tutorial/">Reference Link </a> )
+Before typing-out the necessary code, you have to set up a basic circuit for the IR receiver as such: (<a href="https://www.circuitbasics.com/arduino-ir-remote-receiver-tutorial/">Reference Link</a>)
 
 <img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/e0dbaf46-979e-44a0-b957-1bcde0e6ac80" width="500" />
 
@@ -78,18 +78,19 @@ Note that you will receive a 0XFFFFFFFF code when you press a key continuously.
 <br />
 <img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/0095d1ae-069a-4b67-a58b-b5f21330048d" width="200" />
 <br />
-In my case, my plus Button code is 0xA3C8EDDB and minus Button code is 0xF076C13B.
+In my case, my backPlay Button code is 0x52A3D41F, frontPlay button code is 0xD7E84B1B, plus Button code is 0xA3C8EDDB and minus Button code is 0xF076C13B.
 
 ## Schematics
 ### Connection Schematic Diagram
 Note: Due to limations on TinkerCAD, diagram shows an Arduino UNO instead. Just take note of the pinwiring.
 <br />
-<img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/c6f1fb3d-3293-480c-bbe4-15c202c769f5" width="500" />
+<img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/926673c5-ec92-432e-9c25-3d912f3cdf6c" width="500" />
 <br />
 A 220 ohm resistor is connected to IR Receiver to prevent short circuit.
 <br />
 ### Circuit Diagram
-<img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/57f1201d-5813-4fc6-982b-8e0b3c3ed1cf" width="500" />
+<img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/17938ed4-f85d-4d98-ad7e-d3546e21934f" width="500" />
+
 
 ## Demo
 ### Product Demo
@@ -245,11 +246,14 @@ void loop() {
 
 ## Physical Set Up
 Ideally, the code is for a top-btm servo motor set up for 2 switches as shown in this<a href="https://www.hackster.io/tharindusrt/servo-light-switch-mqtt-1ff492"> example online</a>:
+
 <img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/4ff9fd5a-e4ae-4788-b7e2-05214ac071b1" width="500" />
+
 Due to space constraints above the switch, I have gone for a top-btm servo motor set up for just the light switch.
 
 ## Troubleshooting Tips
 - Tweak the angle of rotation (0 - 180) based on the amount of strength needed to turn the switch on/off.
+- The IR Receiver can be shorted easily. Ensure the resistor is connected. To check if it is working, run the IR Receiver Set Up code in the Basic Set Up section.
 - Firmly secure the servo motor with Bluetac or any adhesive.
 - Make sure the cable connected is a data cable.
 - Use a portable battery pack to power the circuit.
