@@ -75,29 +75,29 @@ void loop(){
 Now press each key on your remote and **write down the hexadecimal codes printed for Plus and Minus key presses**.
 <br />
 Note that you will receive a 0XFFFFFFFF code when you press a key continuously.
-<br />
+
 <img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/0095d1ae-069a-4b67-a58b-b5f21330048d" width="200" />
-<br />
+
 In my case, my backPlay Button code is 0x52A3D41F, frontPlay button code is 0xD7E84B1B, plus Button code is 0xA3C8EDDB and minus Button code is 0xF076C13B.
 
 ## Schematics
 ### Connection Schematic Diagram
 Note: Due to limations on TinkerCAD, diagram shows an Arduino UNO instead. Just take note of the pinwiring.
-<br />
+
 <img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/926673c5-ec92-432e-9c25-3d912f3cdf6c" width="500" />
-<br />
+
 A 220 ohm resistor is connected to IR Receiver to prevent short circuit.
-<br />
+
 ### Circuit Diagram
 <img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/17938ed4-f85d-4d98-ad7e-d3546e21934f" width="500" />
 
 
 ## Demo
 ### Product Demo
-<img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/f4e860b2-7ff9-443e-b342-c55fe1cd8b67" width="500" />
+<img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/f4e860b2-7ff9-443e-b342-c55fe1cd8b67" width="300" />
 
 ### Firebase Demo
-<img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/500490c4-291a-498f-8710-32026adaabe8" width="500" />
+<img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/500490c4-291a-498f-8710-32026adaabe8" width="300" />
 
 ## Code
 #### In this piece of code, you need to amend the codes that are commented with //.
