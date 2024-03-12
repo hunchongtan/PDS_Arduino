@@ -25,12 +25,42 @@ This tutorial will illustrate the working of a DIY SwitchBot.
 ### What is a SwitchBot?
 A SwitchBot is a small gadget with a tiny arm that physically presses the switch or button for you. It can help you to switch on or off your switch without the need to walk over physically. Control your lights, appliances, and even blinds remotely. SwitchBot brings automation and convenience to your everyday life, all in a small, easy-to-install package.
 
-![switchbot-pull](https://github.com/hunchongtan/PDS_Arduino/assets/87000020/02ed8dfe-225f-4936-9bf0-fffef3d85403)
+<img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/02ed8dfe-225f-4936-9bf0-fffef3d85403" width="500" />
 
 In simple terms, a SwitchBot can turn almost any regular switch or button into a smart one!
 
 ### My Inspiration
 The SwitchBot is a must-get for any lazy or “efficient” person like me! However, the $40 SwitchBot price tag had me scrolling past right quickly. But then, a spark of inspiration hit. Why spend the big bucks when I could unleash my inner inventor? Here's the thing: with some Arduino know-how, I can build my own smart switch, customise it exactly how I want, and all for a fraction of the cost. Suddenly, my university Acai Bowl budget started looking a little brighter.  Plus, the challenge of building something myself? Way more exciting than hitting "add to cart."
 
-### Basic Set-Up
-Before typing-out the necessary code, you have to set up the IR receiver. Follow this guide
+## Basic Set-Up
+### IR Receiver Set-Up
+Before typing-out the necessary code, you have to set up a basic circuit for the IR receiver as such: ( <a href="https://www.circuitbasics.com/arduino-ir-remote-receiver-tutorial/">Reference Link </a> )
+
+<img src="https://github.com/hunchongtan/PDS_Arduino/assets/87000020/e0dbaf46-979e-44a0-b957-1bcde0e6ac80" width="500" />
+
+Upload this code to Arduino IDE and open the serial monitor to find the key codes for your remote control.
+
+```
+#include <IRremote.h>
+
+const int RECV_PIN = 7;
+IRrecv irrecv(RECV_PIN);
+decode_results results;
+
+void setup(){
+  Serial.begin(9600);
+  irrecv.enableIRIn();
+  irrecv.blink13(true);
+}
+
+void loop(){
+  if (irrecv.decode(&results)){
+        Serial.println(results.value, HEX);
+        irrecv.resume();
+  }
+}
+```
+Now press each key on your remote and **write down the hexadecimal codes printed for Plus and Minus key presses**.
+<br />
+Note that you will receive a 0XFFFFFFFF code when you press a key continuously.
+
