@@ -1,5 +1,5 @@
 # DIY SwitchBot with ESP32 Wi-Fi Module & Google Firebase
-This tutorial will illustrate the working of a DIY SwitchBot.
+This tutorial will illustrate the working of a DIY SwitchBot using 2 Servo Motors and 1 IR Receiver-Remote.
 <br />
 💪 Beginner | ⌛ 45 minutes | 🎥 <a href="https://youtube.com/shorts/9i0o1jms224?feature=share"> Video Demo </a>
 
